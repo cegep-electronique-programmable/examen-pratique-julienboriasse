@@ -166,7 +166,7 @@ static void mqtt_app_start(void)
     // Configuration du client MQTT
     ESP_LOGI(TAG, "Demarrage MQTT");
     esp_mqtt_client_config_t mqttConfig = {
-        .uri = "mqtt://broker.emqx.io:1883"};
+        .uri = "mqtt://broker.hivemq.com:1883"};
 
     // Initialisation du client MQTT
     client = esp_mqtt_client_init(&mqttConfig);
