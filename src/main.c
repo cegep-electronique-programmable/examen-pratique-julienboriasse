@@ -115,6 +115,9 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 
         msg_id = esp_mqtt_client_subscribe(client, "/cm/test2", 1);
         ESP_LOGI(TAG, "Abonnement au topic /cm/test2 avec succes, msg_id=%d", msg_id);
+
+        msg_id = esp_mqtt_client_subscribe(client, "/tge/e0000000/sub", 1);
+        ESP_LOGI(TAG, "Abonnement au topic /tge/e0000000/sub avec succes, msg_id=%d", msg_id);
         break;
 
     // Si le client MQTT est déconnecté, on se désabonne de topics
