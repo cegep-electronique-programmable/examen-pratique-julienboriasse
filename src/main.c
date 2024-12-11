@@ -21,8 +21,8 @@
 #include "mqtt_client.h"
 
 static const char *TAG = "MQTT_IDF";
-#define WIFI_SSID "ssid"
-#define WIFI_PASS "wifi_password"
+#define WIFI_SSID "iphone"
+#define WIFI_PASS "boriasse"
 
 // Déclaration de la variable MQTT_CONNECTED qui permet de savoir si le client MQTT est connecté au broker MQTT
 uint32_t MQTT_CONNECTED = 0;
